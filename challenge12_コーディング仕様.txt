@@ -1,0 +1,48 @@
+・パソコン画面は「challenge12_sample.jpg」を参考に、スマホ画面は「challenge12_sample_sp.jpg」を参考にコーディングをしてください。
+
+・htmlファイルは「p101_challenge12」フォルダ直下、cssファイルは「css」フォルダの中に保存してください。
+
+・テキストは「challenge12_text.txt」を使用してください。
+
+・cssは「reset.css」を適用させ、別のCSSファイルを作成後「reset.css」の下に適用さてください。
+
+・タイトルは「RISECAFE」と設定してください。
+
+・ファビコンは調べてimagesフォルダにある「favicon.ico」を設定してください。
+　※ファビコンとはなにかも調べてみてください。
+
+・フォント
+下記の順で指定します。
+Helvetica Neue、Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif
+
+・コンテンツ幅
+コンテンツの最大幅は1000pxで横のパディングは16pxです。
+メインビジュアルだけ全幅にします。
+
+・メインビジュアル
+高さはブラウザの全画面表示です。
+ナビゲーションメニュー「MENU、ABOUT、ACCESS、CONTACT」はそれぞれのセクションに「MENU、ABOUT、ACCESS、CONTACT」に移動するようにリンクの作成をお願いいたします。
+また、スムーススクロールで移動するようにしてください。
+
+・背景画像
+MENU、ABOUT、ACCESS、CONTACTの背景画像は、PC時のみ固定のパララックス(背景固定)で実装てください。
+スマホ表示時は背景固定を解除してください。
+※「challenge12_動きについて.pdf」参考
+
+・ABOUT
+ボタン「Read More」はホバー時に動きがあります。
+※「challenge12_動きについて.pdf」参考
+
+・ACCESS
+Googleの地図を埋め込んでいます。
+埋め込んだ後に、グレー表示になるようCSSを設定します。
+
+・CONTACT
+ボタン「送信」はホバー時、クリック時にそれぞれ動きがあります。
+※「challenge12_動きについて.pdf」参考
+文字入力が真ん中から始まらないように気を付けてください。
+
+・モバイル対応
+Googlechromeのデベロッパーツールを使用して、
+iPhone SE、iPhone XR、iPhone 12 Pro
+で表示崩れがないようにしてください。
