@@ -39,12 +39,14 @@ img {
 
 #section {
   background-color: white;
+  padding: 50px 130px;
+  margin-bottom: 80px;
 }
 
 .section-title {
   border-bottom: 3px solid #c1130d;
   width: 120px;
-  margin: 40px;
+  margin: 30px auto;
 }
 
 /*-------------------------------------------
@@ -102,7 +104,7 @@ MENU
 #menu {
   max-width: 1000px;
   background-position: center;
-  height: 1000px;
+  height: 700px;
 }
 
 .menu-img {
@@ -115,7 +117,7 @@ MENU
 .menu-section {
   display: flex;
   text-align: center;
-  padding: 100px;
+  padding: 20% 30px;
   height: 80%;
 }
 
@@ -123,8 +125,8 @@ MENU
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  width: 300px;
+  width: 270px;
+  margin: 0 auto;
 }
 
 #menu dt {
@@ -135,18 +137,16 @@ MENU
 
 #menu dd {
   width: 30%;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .menu-left {
   width: 50%;
   border-right: 1px solid #696969;
-  padding: 30px;
 }
 
 .menu-right {
   width: 50%;
-  padding: 30px;
 }
 
 /*-------------------------------------------
@@ -163,6 +163,28 @@ ABOUT
   background-attachment: fixed;
   background-size: cover;
   height: 120px;
+}
+
+.about-section {
+}
+
+#about img {
+  width: 260px;
+}
+
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about li {
+  width: 50%;
+  padding: 20px;
+}
+
+#about p {
+  font-size: 12px;
+  text-align: left;
 }
 
 /*-------------------------------------------
