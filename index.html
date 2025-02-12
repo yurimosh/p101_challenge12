@@ -131,10 +131,11 @@
             </p>
           </li>
         </ul>
+
+        <a class="btn" href="#">
+          <span>READ MORE</span>
+        </a>
       </div>
-      <a class="btn" href="#">
-        <span>READ MORE</span>
-      </a>
     </div>
 
     <!-- アクセス -->
@@ -143,29 +144,29 @@
       <div class="access-img">
         <h1 class="content-title">ACCESS</h1>
       </div>
-      <div class="section">
+      <div id="section" class="access-section">
         <h2 class="section-title">STORE</h2>
-      </div>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5982.791019340962!2d139.71077199264403!3d35.69357310377328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce61cfac13d%3A0xc62871a72991d206!2z44CSMTYyLTAwNjcg5p2x5Lqs6YO95paw5a6_5Yy65a-M5LmF55S6!5e1!3m2!1sja!2sjp!4v1738997236765!5m2!1sja!2sjp"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="gmap_iframe"
-      ></iframe>
-      <ul>
-        <li>
-          X-XX-XX, Tomihisacho, Shinjuku-ku, Tokyo 162-0067
-          <br />東京都新宿区富久町X-XX-XX
-        </li>
-        <li>Open 7 days a Week</li>
-        <li>9:00am to 10:00pm</li>
-        <li>Tel : XX-XXXX-XXXX</li>
-      </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5982.791019340962!2d139.71077199264403!3d35.69357310377328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce61cfac13d%3A0xc62871a72991d206!2z44CSMTYyLTAwNjcg5p2x5Lqs6YO95paw5a6_5Yy65a-M5LmF55S6!5e1!3m2!1sja!2sjp!4v1738997236765!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="gmap_iframe"
+        ></iframe>
+        <ul>
+          <li>
+            X-XX-XX, Tomihisacho, Shinjuku-ku, Tokyo 162-0067
+            <br />東京都新宿区富久町X-XX-XX
+          </li>
+          <li>Open 7 days a Week</li>
+          <li>9:00am to 10:00pm</li>
+          <li>Tel : XX-XXXX-XXXX</li>
+        </ul>
+      </div>
     </div>
 
     <!-- コンタクト -->
@@ -175,27 +176,43 @@
         <h1 class="content-title">CONTACT</h1>
       </div>
 
-      <form action="">
-        <p>名前</p>
-        <input />
-        <p>性別</p>
-        <input type="radio" name="gender" />男性
-        <input type="radio" name="gender" />女性
-        <input type="radio" name="gender" />指定なし
+      <div id="section" class="contact-section">
+        <form action="">
+          <p>名前</p>
+          <input class="input" />
+          <p>性別</p>
+          <input type="radio" name="gender" />男性
+          <input type="radio" name="gender" />女性
+          <input type="radio" name="gender" />指定なし
 
-        <p>メールアドレス</p>
-        <input />
+          <p>メールアドレス</p>
+          <input class="input" />
 
-        <p>来店回数</p>
+          <p>来店回数</p>
+          <input type="radio" name="gender" />初めて
+          <input type="radio" name="gender" />2回目
+          <input type="radio" name="gender" />3回目以上
 
-        <p>今までの来店店舗</p>
+          <p>今までの来店店舗</p>
+          <input type="radio" name="gender" />新宿店
+          <input type="radio" name="gender" />渋谷店
+          <input type="radio" name="gender" />中野店
 
-        <p>お問い合わせ項目</p>
+          <p>お問い合わせ項目</p>
 
-        <p>内容</p>
+          <select class="select">
+            <option value="goods">商品について</option>
+            <option value="goods">接客について</option>
+            <option value="goods">その他</option>
+          </select>
 
-        <textarea name="" id=""></textarea>
-      </form>
+          <p>内容</p>
+
+          <textarea name="" id=""></textarea>
+
+          <input type="submit" class="btn" />
+        </form>
+      </div>
     </div>
   </main>
 

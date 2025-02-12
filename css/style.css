@@ -6,6 +6,8 @@ html {
 body {
   color: #383e45;
   font-size: 0.9rem;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 }
 
 a {
@@ -156,7 +158,6 @@ ABOUT
 
 #about {
   max-width: 1000px;
-  height: 1000px;
 }
 
 .about-img {
@@ -194,16 +195,12 @@ ABOUT
   padding: 10px auto;
 }
 
-#about .span {
-}
-
 /*-------------------------------------------
 ACCESS
 -------------------------------------------*/
 
 #access {
   max-width: 1000px;
-  height: 1000px;
 }
 
 .access-img {
@@ -214,10 +211,11 @@ ACCESS
 }
 
 .gmap_iframe {
-  aspect-ratio: 5 / 2;
+  aspect-ratio: 640 / 270;
   max-width: 600px;
   width: 100%;
   height: auto;
+  filter: grayscale(100%);
 }
 
 #access ul {
@@ -244,7 +242,6 @@ CONTACT
 
 #contact {
   max-width: 1000px;
-  height: 1000px;
 }
 
 .contact-img {
@@ -252,6 +249,52 @@ CONTACT
   background-attachment: fixed;
   background-position: center;
   height: 120px;
+}
+
+#contact p {
+  margin: 10px;
+  font-weight: bold;
+}
+
+#contact .input {
+  width: 100%;
+  border: 1px solid #696969;
+}
+
+#contact .select {
+  width: 100%;
+  border: 1px solid #696969;
+  text-align: center;
+}
+
+#contact textarea {
+  width: 100%;
+  height: 7em;
+  border: 1px solid #696969;
+}
+
+#contact .btn {
+  width: 400px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #c1130d;
+  color: white;
+  margin: 20px;
+  box-shadow: 0 2px black;
+}
+
+#contact input:hover {
+  background-color: white;
+  color: #c1130d;
+
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#contact input:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
 }
 
 /*-------------------------------------------
