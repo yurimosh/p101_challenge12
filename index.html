@@ -189,11 +189,15 @@
             <p>名前</p>
             <input class="input" />
           </div>
+
           <div>
             <p>性別</p>
-            <input type="radio" name="gender" />男性
-            <input type="radio" name="gender" />女性
-            <input type="radio" name="gender" />指定なし
+            <input type="radio" name="gender" value="male" />
+            <label for="">男性</label>
+            <input type="radio" name="gender" value="female" />
+            <label for="">女性</label>
+            <input type="radio" name="gender" value="other" />
+            <label for="">指定なし</label>
           </div>
 
           <div>
@@ -202,16 +206,22 @@
           </div>
           <div>
             <p>来店回数</p>
-            <input type="radio" name="gender" />初めて
-            <input type="radio" name="gender" />2回目
-            <input type="radio" name="gender" />3回目以上
+            <input type="radio" name="count" value="" />
+            <label for="">初めて</label>
+            <input type="radio" name="count" value="" />
+            <label for="">2回目</label>
+            <input type="radio" name="count" value="" />
+            <label for="">3回目以上</label>
           </div>
 
           <div>
             <p>今までの来店店舗</p>
-            <input type="checkbox" name="gender" />新宿店
-            <input type="checkbox" name="gender" />渋谷店
-            <input type="checkbox" name="gender" />中野店
+            <input type="checkbox" name="gender" />
+            <label for="">新宿店</label>
+            <input type="checkbox" name="gender" />
+            <label for="">渋谷店</label>
+            <input type="checkbox" name="gender" />
+            <label for="">中野店</label>
           </div>
 
           <div>
