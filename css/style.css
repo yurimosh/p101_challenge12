@@ -227,12 +227,12 @@ ABOUT
 
 #about .btn {
   display: inline-block;
-  line-height: 2.8;
-  width: 100px;
-  height: 35px;
+  width: 140px;
   background-color: #e03131;
   color: #ffffff;
   letter-spacing: 0;
+  padding: 12px 0;
+  border: 1px solid #e03131;
 }
 
 #about .btn:hover {
