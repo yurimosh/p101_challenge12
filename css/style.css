@@ -60,6 +60,11 @@ img {
   font-size: 26px;
 }
 
+.select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -316,12 +321,13 @@ CONTACT
 }
 
 #contact .btn {
-  width: 400px;
-  height: 50px;
+  width: 60%;
+  min-width: 200px;
   border: 1px solid black;
   color: #ffffff;
   background-color: #e03131;
-  margin: 20px;
+  padding: 10px 0;
+  margin: 20px 0;
   box-shadow: 0 2px black;
 }
 
