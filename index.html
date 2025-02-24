@@ -15,25 +15,23 @@
 
 <body>
   <!-- ヘッダー -->
-  <header id="header" class="content">
-    <div class="header-top">
-      <nav>
-        <ul>
-          <li>
-            <a href="#menu">MENU</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#access">ACCESS</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <header id="header">
+    <nav>
+      <ul>
+        <li>
+          <a href="#menu">MENU</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#access">ACCESS</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
 
     <div class="mainvisual">
       <img src="./images/logo.png" />
@@ -44,12 +42,12 @@
   <main>
     <!-- メニュー -->
     <div id="menu" class="content">
-      <div class="menu-img">
+      <div class="menu-img bg-img">
         <h1 class="content-title">MENU</h1>
       </div>
 
-      <div id="section" class="menu-section">
-        <div class="menu-left">
+      <div class="menu-section wrapper">
+        <div class="menu-item">
           <h2 class="section-title">COFFEE</h2>
           <dl>
             <dt>XXXXXXXX</dt>
@@ -74,9 +72,9 @@
             <dd>¥500</dd>
           </dl>
         </div>
-        <div class="menu-right">
+        <div class="menu-item">
           <h2 class="section-title">FOOD</h2>
-          <dl>
+          <dl class="menu-food">
             <dt>XXXXXXXX</dt>
             <dd>¥500</dd>
             <dt>XXXXXXXX</dt>
@@ -100,15 +98,24 @@
 
     <!-- アバウト -->
     <div id="about" class="content">
-      <div class="about-img">
+      <div class="about-img bg-img">
         <h1 class="content-title">ABOUT</h1>
       </div>
 
-      <div id="section" class="about-section">
+      <div class="about-section wrapper">
         <h2 class="section-title">COFFEE</h2>
-
-        <img src="./images/about_img_1.jpg" alt="画像が表示されません" />
-        <img src="./images/about_img_2.jpg" alt="画像が表示されません" />
+        <div class="coffee-img">
+          <img
+            class="img1"
+            src="./images/about_img_1.jpg"
+            alt="画像が表示されません"
+          />
+          <img
+            class="img2"
+            src="./images/about_img_2.jpg"
+            alt="画像が表示されません"
+          />
+        </div>
         <ul>
           <li>
             <p>
@@ -133,7 +140,7 @@
         </ul>
 
         <a class="btn" href="#">
-          <span>READ MORE</span>
+          <span>Read More</span>
         </a>
       </div>
     </div>
@@ -141,10 +148,10 @@
     <!-- アクセス -->
 
     <div id="access" class="content">
-      <div class="access-img">
+      <div class="access-img bg-img">
         <h1 class="content-title">ACCESS</h1>
       </div>
-      <div id="section" class="access-section">
+      <div class="access-section wrapper">
         <h2 class="section-title">STORE</h2>
 
         <iframe
@@ -172,11 +179,11 @@
     <!-- コンタクト -->
 
     <div id="contact" class="content">
-      <div class="contact-img">
+      <div class="contact-img bg-img">
         <h1 class="content-title">CONTACT</h1>
       </div>
 
-      <div id="section" class="contact-section">
+      <div class="contact-section wrapper">
         <form action="">
           <p>名前</p>
           <input class="input" />
@@ -194,9 +201,9 @@
           <input type="radio" name="gender" />3回目以上
 
           <p>今までの来店店舗</p>
-          <input type="radio" name="gender" />新宿店
-          <input type="radio" name="gender" />渋谷店
-          <input type="radio" name="gender" />中野店
+          <input type="checkbox" name="gender" />新宿店
+          <input type="checkbox" name="gender" />渋谷店
+          <input type="checkbox" name="gender" />中野店
 
           <p>お問い合わせ項目</p>
 

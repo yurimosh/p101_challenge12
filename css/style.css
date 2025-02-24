@@ -31,24 +31,35 @@ img {
 .content {
   max-width: 1000px;
   text-align: center;
-  margin-bottom: 16px;
+}
+
+.bg-img {
+  position: relative;
+  height: 170px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .content-title {
+  width: 100%;
   text-align: center;
-  padding: 40px;
+  position: absolute;
+  top: 30%;
+  font-size: 48px;
 }
 
-#section {
+.wrapper {
   background-color: white;
-  padding: 50px 130px;
-  margin-bottom: 80px;
+  max-width: 1000px;
+  padding: 50px 18%;
 }
 
 .section-title {
-  border-bottom: 3px solid #c1130d;
-  width: 120px;
-  margin: 30px auto;
+  display: inline-block;
+  border-bottom: 4px solid #c1130d;
+  margin: 0 auto 46px auto;
+  font-size: 26px;
 }
 
 /*-------------------------------------------
@@ -58,18 +69,17 @@ img {
 #header {
   background-image: url(../images/mainvisual.jpg);
   background-size: cover;
-  max-width: 1000px;
-  max-height: 580px;
-}
-.header-top {
-  max-width: 1000px;
-  height: auto;
+  background-position: center;
+  /* max-width: 1000px; */
+  height: 560px;
+  position: relative;
+  padding: 16px 40px 0 40px;
+  filter: sepia(10%);
 }
 
 #header nav {
-  text-align: left;
-  float: right;
-  padding: 20px;
+  display: block;
+  justify-self: flex-end;
 }
 
 #header ul {
@@ -81,22 +91,29 @@ img {
 }
 
 #header a {
-  font-size: 12px;
-  color: aliceblue;
+  font-size: 10px;
+  color: #ffffff;
   font-family: Helvetica Neue;
+  text-shadow: 1px 2px 3px #808080;
 }
 
 #header a:hover {
-  color: #c1130d;
+  color: #e03131;
+  transition: all 0.3s ease-in-out;
 }
 
-#header .mainvisual {
-  height: 100%;
+.mainvisual {
+  padding: 0 90px;
+  position: absolute;
+  text-align: center;
+  top: 32%;
+  left: 0%;
+  right: 0%;
 }
 
 #header img {
-  max-width: 70%;
-  padding: 20% 0;
+  display: block;
+  width: 100%;
 }
 
 /*-------------------------------------------
@@ -104,71 +121,89 @@ MENU
 -------------------------------------------*/
 
 #menu {
-  max-width: 1000px;
-  background-position: center;
-  height: 700px;
+  margin-top: 12px;
 }
 
 .menu-img {
   background-image: url(../images/menu.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 120px;
 }
 
 .menu-section {
   display: flex;
   text-align: center;
-  padding: 20% 30px;
-  height: 80%;
 }
 
 #menu dl {
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
-  width: 270px;
   margin: 0 auto;
 }
 
 #menu dt {
   border-bottom: 1px dotted #696969;
-  width: 70%;
+  width: 82%;
   text-align: left;
+  margin-bottom: 14px;
 }
 
 #menu dd {
-  width: 30%;
-  padding: 10px 0;
+  width: 18%;
+  padding-top: 8px;
+  font-size: 12px;
 }
 
-.menu-left {
+.menu-item {
   width: 50%;
+  padding: 0 20px;
+}
+
+.menu-item:first-child {
   border-right: 1px solid #696969;
+  margin-left: 30px;
 }
 
-.menu-right {
-  width: 50%;
+.menu-item:nth-child(2n) {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+#menu .menu-food {
+  margin-bottom: 50px;
 }
 
 /*-------------------------------------------
 ABOUT
 -----------------------------------------*/
 
-#about {
-  max-width: 1000px;
-}
-
 .about-img {
   background-image: url(../images/about.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  height: 120px;
 }
 
 #about img {
-  width: 260px;
+  width: 200px;
+}
+
+.about-section {
+}
+
+.coffee-img {
+  position: relative;
+  max-width: 100%;
+  height: 240px;
+}
+
+#about .img1 {
+  position: absolute;
+  top: 20px;
+  left: 25%;
+  z-index: 1;
+}
+
+#about .img2 {
+  position: absolute;
+  top: 85px;
+  left: 43%;
 }
 
 #about ul {
@@ -178,7 +213,9 @@ ABOUT
 
 #about li {
   width: 50%;
-  padding: 20px;
+  padding: 20px 10px;
+  line-height: 20px;
+  letter-spacing: 1px;
 }
 
 #about p {
@@ -188,38 +225,46 @@ ABOUT
 
 #about .btn {
   display: inline-block;
-  width: 150px;
-  height: 40px;
-  background-color: #c1130d;
-  color: white;
-  padding: 10px auto;
+  line-height: 2.8;
+  width: 100px;
+  height: 35px;
+  background-color: #e03131;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+#about .btn:hover {
+  transition: all 0.7s ease-in;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+  color: #e03131;
+  border: 1px solid #e03131;
+}
+
+#about span {
+  display: block;
+  width: 100%;
+  font-size: 12px;
 }
 
 /*-------------------------------------------
 ACCESS
 -------------------------------------------*/
 
-#access {
-  max-width: 1000px;
-}
-
 .access-img {
   background-image: url(../images/access.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  height: 120px;
 }
 
 .gmap_iframe {
   aspect-ratio: 640 / 270;
-  max-width: 600px;
+
   width: 100%;
   height: auto;
   filter: grayscale(100%);
 }
 
 #access ul {
-  padding: 10px 190px 100px 190px;
+  padding: 10px 0;
 }
 
 #access li {
@@ -240,20 +285,18 @@ ACCESS
 CONTACT
 -------------------------------------------*/
 
-#contact {
-  max-width: 1000px;
-}
-
 .contact-img {
   background-image: url(../images/contact.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  height: 120px;
 }
 
 #contact p {
   margin: 10px;
   font-weight: bold;
+  font-size: 10px;
+}
+
+#contact text {
+  font-size: 10px;
 }
 
 #contact .input {
@@ -277,17 +320,16 @@ CONTACT
   width: 400px;
   height: 50px;
   border: 1px solid black;
-  background-color: #c1130d;
-  color: white;
+  color: #ffffff;
+  background-color: #e03131;
   margin: 20px;
   box-shadow: 0 2px black;
 }
 
 #contact input:hover {
-  background-color: white;
-  color: #c1130d;
-
-  transition: all 0.5s;
+  background-color: #ffffff;
+  color: #e03131;
+  transition: all 0.7s ease-in;
   cursor: pointer;
 }
 
@@ -295,6 +337,9 @@ CONTACT
   position: relative;
   top: 2px;
   box-shadow: none;
+  transition: all 0s ease-in;
+  color: #ffffff;
+  background-color: #e03131;
 }
 
 /*-------------------------------------------
@@ -307,5 +352,22 @@ footer p {
 }
 
 /*-------------------------------------------
-SP
+SP 1170
 -------------------------------------------*/
+
+@media (max-width: 1170px) {
+}
+
+/*-------------------------------------------
+SP 828
+-------------------------------------------*/
+
+@media (max-width: 828px) {
+}
+
+/*-------------------------------------------
+SP 640
+-------------------------------------------*/
+
+@media (max-width: 640px) {
+}
