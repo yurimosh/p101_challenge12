@@ -325,14 +325,14 @@ CONTACT
   box-shadow: 0 2px black;
 }
 
-#contact input:hover {
+#contact .btn:hover {
   background-color: #ffffff;
   color: #e03131;
   transition: all 0.7s ease-in;
   cursor: pointer;
 }
 
-#contact input:active {
+#contact .btn:active {
   position: relative;
   top: 2px;
   box-shadow: none;
