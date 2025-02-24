@@ -28,11 +28,6 @@ img {
   max-width: 100%;
 }
 
-.content {
-  max-width: 1000px;
-  text-align: center;
-}
-
 .bg-img {
   position: relative;
   height: 170px;
@@ -51,8 +46,8 @@ img {
 
 .wrapper {
   background-color: white;
-  max-width: 1000px;
   padding: 50px 18%;
+  text-align: center;
 }
 
 .section-title {
@@ -185,6 +180,7 @@ ABOUT
 }
 
 .about-section {
+  text-align: center;
 }
 
 .coffee-img {
