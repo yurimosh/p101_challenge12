@@ -1,10 +1,11 @@
+@charset "UTF-8";
+
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
 
 body {
-  color: #383e45;
   font-size: 0.9rem;
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
@@ -12,6 +13,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 li {
@@ -24,10 +29,6 @@ h1 {
   font-size: 40px;
 }
 
-img {
-  max-width: 100%;
-}
-
 .bg-img {
   position: relative;
   background-position: center;
@@ -36,22 +37,23 @@ img {
   padding: 70px 0;
 }
 
-.content-title {
+.section-title {
   width: 100%;
   text-align: center;
   font-size: 48px;
 }
 
 .wrapper {
-  background-color: white;
-  padding: 50px 14%;
+  /* display: flex;
+  flex-wrap: wrap; */
   max-width: 1000px;
+  padding: 10% 16px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-title {
+.item-title {
   display: inline-block;
   border-bottom: 4px solid #c1130d;
   margin: 0 auto 46px auto;
@@ -104,17 +106,16 @@ img {
 }
 
 .mainvisual {
-  padding: 0 90px;
   position: absolute;
+  padding: 0 16px;
   text-align: center;
-  top: 32%;
-  left: 0%;
-  right: 0%;
+
+  top: 35%;
+  left: 0;
+  right: 0;
 }
 
 #header img {
-  display: block;
-  width: 100%;
 }
 
 /*-------------------------------------------
@@ -123,13 +124,14 @@ MENU
 
 #menu {
   margin-top: 12px;
+  position: relative;
 }
 
 .menu-img {
   background-image: url(../images/menu.jpg);
 }
 
-.menu-section {
+.menu-content {
   display: flex;
   text-align: center;
 }
@@ -183,10 +185,6 @@ ABOUT
 
 #about img {
   width: 200px;
-}
-
-.about-section {
-  text-align: center;
 }
 
 .coffee-img {
@@ -259,7 +257,6 @@ ACCESS
 
 .gmap_iframe {
   aspect-ratio: 640 / 270;
-
   width: 100%;
   height: auto;
   filter: grayscale(100%);
@@ -372,5 +369,52 @@ SP 828
 SP 640
 -------------------------------------------*/
 
+/*-------------------------------------------
+SP 767
+-------------------------------------------*/
+
 @media (max-width: 640px) {
+  .bg-img {
+    position: relative;
+    background-attachment: scroll;
+    padding: 70px 0;
+    height: 150px;
+  }
+
+  .wrapper {
+    background-color: white;
+    max-width: 640px;
+    width: 640px;
+    padding: 50px 16px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .bg-img {
+    padding: 35px 0;
+  }
+
+  /*-------------------------------------------
+MENU
+-----------------------------------------*/
+  .menu-item {
+    width: 80%;
+    padding: 0 20px;
+  }
+
+  /*-------------------------------------------
+ABOUT
+-----------------------------------------*/
+
+  /* 横並び解除 */
+  #about ul {
+    display: block;
+  }
+
+  #about li {
+    width: 100%;
+    /* padding: 20px 10px;
+  line-height: 20px;
+  letter-spacing: 1px; */
+  }
 }
