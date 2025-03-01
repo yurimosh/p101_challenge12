@@ -57,7 +57,7 @@ h1 {
   display: inline-block;
   border-bottom: 4px solid #c1130d;
   margin: 0 auto 46px auto;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .select {
@@ -105,12 +105,11 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.mainvisual {
+.main-logo {
   position: absolute;
-  padding: 0 16px;
-  text-align: center;
+  padding: 0 90px;
 
-  top: 35%;
+  top: 30%;
   left: 0;
   right: 0;
 }
@@ -137,7 +136,6 @@ MENU
 }
 
 #menu dl {
-  font-size: 12px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -147,13 +145,14 @@ MENU
   border-bottom: 1px dotted #696969;
   width: 82%;
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 #menu dd {
   width: 18%;
   padding-top: 8px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .menu-item {
@@ -163,11 +162,11 @@ MENU
 
 .menu-item:first-child {
   border-right: 1px solid #696969;
-  margin-left: 30px;
+  margin-left: 100px;
 }
 
 .menu-item:nth-child(2n) {
-  margin-right: 30px;
+  margin-right: 100px;
   margin-left: 10px;
 }
 
@@ -184,26 +183,27 @@ ABOUT
 }
 
 #about img {
-  width: 200px;
+  width: 240px;
 }
 
 .coffee-img {
   position: relative;
   max-width: 100%;
-  height: 240px;
+
+  padding: 140px 0;
 }
 
 #about .img1 {
   position: absolute;
-  top: 20px;
-  left: 25%;
+  top: 8px;
+  left: 300px;
   z-index: 1;
 }
 
 #about .img2 {
   position: absolute;
   top: 85px;
-  left: 43%;
+  left: 450px;
 }
 
 #about ul {
@@ -219,7 +219,7 @@ ABOUT
 }
 
 #about p {
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -417,4 +417,8 @@ ABOUT
   line-height: 20px;
   letter-spacing: 1px; */
   }
+}
+
+textarea {
+  resize: both;
 }
