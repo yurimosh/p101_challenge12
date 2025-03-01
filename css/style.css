@@ -251,6 +251,10 @@ ABOUT
 ACCESS
 -------------------------------------------*/
 
+.store-item {
+  padding: 0 60px;
+}
+
 .access-img {
   background-image: url(../images/access.jpg);
 }
@@ -260,6 +264,7 @@ ACCESS
   width: 100%;
   height: auto;
   filter: grayscale(100%);
+  padding: 20px 0;
 }
 
 #access ul {
@@ -269,7 +274,7 @@ ACCESS
 #access li {
   width: 600px;
   text-align: left;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 #access li:first-child {
@@ -288,14 +293,18 @@ CONTACT
   background-image: url(../images/contact.jpg);
 }
 
+#contact form {
+  padding: 10px 100px;
+}
+
 #contact p {
   margin: 10px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #contact text {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #contact .input {
