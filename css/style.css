@@ -24,7 +24,6 @@ li {
 }
 
 h1 {
-  font-family: Arial;
   color: white;
   font-size: 40px;
 }
@@ -73,7 +72,6 @@ h1 {
   background-image: url(../images/mainvisual.jpg);
   background-size: cover;
   background-position: center;
-  /* max-width: 1000px; */
   height: 560px;
   position: relative;
   padding: 16px 40px 0 40px;
@@ -105,16 +103,16 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.main-logo {
+.main-logo .pc-logo {
   position: absolute;
   padding: 0 90px;
-
   top: 30%;
   left: 0;
   right: 0;
 }
 
-#header img {
+.main-logo .sp-logo {
+  display: none;
 }
 
 /*-------------------------------------------
@@ -186,36 +184,42 @@ ABOUT
   width: 240px;
 }
 
-.coffee-img {
-  position: relative;
+#about .coffee-imgarea {
   max-width: 100%;
+  height: 320px;
+  display: flex;
+}
 
-  padding: 140px 0;
+#about .coffee-img {
+  position: relative;
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;
 }
 
 #about .img1 {
   position: absolute;
   top: 8px;
-  left: 300px;
+  left: 0px;
   z-index: 1;
 }
 
 #about .img2 {
   position: absolute;
   top: 85px;
-  left: 450px;
+  left: 150px;
 }
 
 #about ul {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 70px;
 }
 
 #about li {
   width: 50%;
-  padding: 20px 40px;
-  line-height: 20px;
-  letter-spacing: 1px;
+  padding: 20px 20px;
+  line-height: 2em;
 }
 
 #about p {
@@ -252,7 +256,7 @@ ACCESS
 -------------------------------------------*/
 
 .store-item {
-  padding: 0 60px;
+  padding: 0 70px;
 }
 
 .access-img {
@@ -310,6 +314,7 @@ CONTACT
 #contact .input {
   width: 100%;
   border: 1px solid #696969;
+  text-align: left;
 }
 
 #contact .select {
@@ -322,6 +327,7 @@ CONTACT
   width: 100%;
   height: 7em;
   border: 1px solid #696969;
+  text-align: left;
 }
 
 #contact .btn {
@@ -392,8 +398,7 @@ SP 767
 
   .wrapper {
     background-color: white;
-    max-width: 640px;
-    width: 640px;
+    max-width: 100%;
     padding: 50px 16px;
     text-align: center;
     flex-direction: column;
@@ -401,33 +406,93 @@ SP 767
 
   .bg-img {
     padding: 35px 0;
+    height: 100px;
+    position: relative;
+    background-position: center;
+    /* background-size: cover; */
+  }
+
+  /*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+  .main-logo .pc-logo {
+    display: none;
+  }
+
+  .main-logo .sp-logo {
+    display: block;
+    position: absolute;
+    padding: 0 50px;
+    top: 45%;
+    left: 0;
+    right: 0;
   }
 
   /*-------------------------------------------
 MENU
 -----------------------------------------*/
   .menu-item {
-    width: 80%;
-    padding: 0 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu-item:first-child {
+    border-right: none;
+    margin-left: 0;
+  }
+
+  .menu-item:nth-child(2n) {
+    margin-right: 100px;
+    margin-left: 10px;
   }
 
   /*-------------------------------------------
 ABOUT
 -----------------------------------------*/
 
+  #about .img1 {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  #about .img2 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+
   /* 横並び解除 */
   #about ul {
     display: block;
+    padding: 0 0;
   }
 
   #about li {
     width: 100%;
-    /* padding: 20px 10px;
-  line-height: 20px;
-  letter-spacing: 1px; */
+    padding: 20px 0px;
+    line-height: 20px;
   }
 }
 
 textarea {
   resize: both;
+}
+
+/*-------------------------------------------
+ACCESS
+-----------------------------------------*/
+
+#access .store-item {
+  padding: 0 0;
+}
+
+/*-------------------------------------------
+CONTACT
+-----------------------------------------*/
+
+#contact form {
+  padding: 10px 0;
 }
