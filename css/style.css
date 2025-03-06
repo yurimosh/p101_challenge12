@@ -44,7 +44,7 @@ h1 {
 
 .content {
   max-width: 1000px;
-  padding: 72px 16px 120px 16px;
+  padding: 30px 16px 120px 16px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -97,7 +97,7 @@ h1 {
 }
 
 #header a:hover {
-  color: ;
+  color: #e03131;
   transition: all 0.3s ease-in-out;
 }
 
@@ -127,7 +127,6 @@ MENU
 }
 
 .menu-content {
-  display: flex;
   text-align: center;
 }
 
@@ -152,18 +151,19 @@ MENU
 }
 
 .menu-item {
+  display: flex;
+  padding: 0 14%;
+}
+
+.coffee-item {
   width: 50%;
-  padding: 0 20px;
-}
-
-.menu-item:first-child {
   border-right: 1px solid #696969;
-  margin-left: 100px;
+  padding-right: 20px;
 }
 
-.menu-item:nth-child(2n) {
-  margin-right: 100px;
-  margin-left: 10px;
+.food-item {
+  width: 50%;
+  margin-left: 20px;
 }
 
 #menu .menu-food {
@@ -186,6 +186,10 @@ ABOUT
   width: 100%;
   height: 280px;
   display: flex;
+}
+
+#about .about-item {
+  padding: 0 70px 40px 70px;
 }
 
 #about .coffee-img {
@@ -211,7 +215,6 @@ ABOUT
 #about ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 70px 40px 70px;
 }
 
 #about li {
@@ -253,7 +256,7 @@ ABOUT
 ACCESS
 -------------------------------------------*/
 
-#access .store-item {
+#access .access-item {
   padding: 0 100px;
 }
 
@@ -295,11 +298,11 @@ CONTACT
 }
 
 #contact form {
-  padding: 10px 100px;
+  padding: 0 100px 10px 100px;
 }
 
 #contact p {
-  margin: 10px;
+  margin: 16px 14px 6px 14px;
   font-weight: bold;
   font-size: 12px;
 }
@@ -327,8 +330,12 @@ CONTACT
   text-align: left;
 }
 
+#contact label {
+  font-size: 12px;
+}
+
 #contact .btn {
-  width: 60%;
+  width: 50%;
   min-width: 200px;
   border: 1px solid black;
   color: #ffffff;
@@ -354,16 +361,6 @@ CONTACT
   background-color: #e03131;
 }
 
-.contact-content {
-  /* display: flex;
-  flex-wrap: wrap; */
-  max-width: 1000px;
-  padding: 30px 16px 120px 16px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
@@ -371,6 +368,7 @@ CONTACT
 footer p {
   font-size: 9px;
   text-align: center;
+  padding: 10px;
 }
 
 /*-------------------------------------------
@@ -440,23 +438,34 @@ SP 767
 MENU
 -----------------------------------------*/
   .menu-item {
+    display: block;
     width: 100%;
     padding: 0;
   }
 
-  .menu-item:first-child {
+  .coffee-item {
     border-right: none;
-    margin-left: 0;
+    padding-right: 0;
   }
 
-  .menu-item:nth-child(2n) {
-    margin-right: 100px;
-    margin-left: 10px;
+  .coffee-item {
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .food-item {
+    width: 100%;
+    margin-left: 0;
   }
 
   /*-------------------------------------------
 ABOUT
 -----------------------------------------*/
+
+  #about .about-item {
+    padding: 0;
+  }
 
   #about .coffee-img {
     position: relative;
@@ -477,7 +486,6 @@ ABOUT
   /* 横並び解除 */
   #about ul {
     display: block;
-    padding: 0 0;
   }
 
   #about li {
@@ -494,8 +502,8 @@ ABOUT
 ACCESS
 -----------------------------------------*/
 
-  #access .store-item {
-    padding: 0 0;
+  #access .access-item {
+    padding: 0;
   }
 
   /*-------------------------------------------
