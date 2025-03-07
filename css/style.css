@@ -153,7 +153,7 @@ MENU
 
 .menu-item {
   display: flex;
-  padding: 0 14%;
+  padding: 40px 12% 0 12%;
 }
 
 .coffee-item {
@@ -190,7 +190,7 @@ ABOUT
 }
 
 #about .about-item {
-  padding: 0 70px 40px 70px;
+  padding: 40px 12% 0 12%;
 }
 
 #about .coffee-img {
@@ -203,14 +203,14 @@ ABOUT
 #about .img1 {
   position: absolute;
   top: 8px;
-  left: 0px;
+  left: 5px;
   z-index: 1;
 }
 
 #about .img2 {
   position: absolute;
   top: 85px;
-  left: 150px;
+  left: 155px;
 }
 
 #about ul {
@@ -258,7 +258,7 @@ ACCESS
 -------------------------------------------*/
 
 #access .access-item {
-  padding: 0 100px;
+  padding: 40px 12% 0 12%;
 }
 
 .access-img {
@@ -341,7 +341,7 @@ CONTACT
   text-align: left;
   resize: both;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   min-width: 100%;
   min-height: 100px;
   max-height: 300px;
@@ -349,6 +349,7 @@ CONTACT
 
 #contact label {
   font-size: 12px;
+  padding-right: 10px;
 }
 
 #contact .btn {
@@ -427,11 +428,15 @@ SP 767
   }
 
   .bg-img {
-    padding: 35px 0;
-    height: 100px;
+    padding: 20px 0;
+    height: 80px;
     position: relative;
-    background-position: center;
-    /* background-size: cover; */
+  }
+
+  .section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
   }
 
   /*-------------------------------------------
