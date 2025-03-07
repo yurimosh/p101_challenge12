@@ -190,27 +190,27 @@ ABOUT
 }
 
 #about .about-item {
-  padding: 40px 12% 0 12%;
+  padding: 40px 50px 0 50px;
 }
 
 #about .coffee-img {
   position: relative;
   width: 400px;
-  height: 100%;
+  height: 240px;
   margin: 0 auto;
 }
 
 #about .img1 {
   position: absolute;
-  top: 8px;
-  left: 5px;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
 #about .img2 {
   position: absolute;
-  top: 85px;
-  left: 155px;
+  bottom: 0;
+  right: 0;
 }
 
 #about ul {
@@ -422,7 +422,7 @@ SP 767
   .content {
     background-color: white;
     max-width: 100%;
-    padding: 50px 16px;
+    padding: 30px 16px;
     text-align: center;
     flex-direction: column;
   }
@@ -430,13 +430,17 @@ SP 767
   .bg-img {
     padding: 20px 0;
     height: 80px;
-    position: relative;
   }
 
   .section-title {
     width: 100%;
     text-align: center;
     font-size: 36px;
+  }
+
+  .item-title {
+    font-size: 18px;
+    margin: 0 auto 30px auto;
   }
 
   /*-------------------------------------------
@@ -491,18 +495,7 @@ ABOUT
 
   #about .coffee-img {
     position: relative;
-    height: 100%;
     margin: 0 auto;
-  }
-
-  #about .img1 {
-    z-index: 1;
-  }
-
-  #about .img2 {
-    position: absolute;
-    top: 100px;
-    left: 80px;
   }
 
   /* 横並び解除 */
@@ -512,12 +505,13 @@ ABOUT
 
   #about li {
     width: 100%;
-    padding: 20px 0px;
+    padding: 8px 0px;
     line-height: 20px;
   }
 
-  textarea {
-    resize: both;
+  #about p {
+    line-height: 2em;
+    font-size: 16px;
   }
 
   /*-------------------------------------------
@@ -528,11 +522,21 @@ ACCESS
     padding: 0;
   }
 
+  .gmap_iframe {
+    aspect-ratio: 680 / 780;
+    height: auto;
+    filter: grayscale(100%);
+  }
+
   /*-------------------------------------------
 CONTACT
 -----------------------------------------*/
 
   #contact form {
     padding: 10px 0;
+  }
+
+  #contact textarea {
+    resize: both;
   }
 }
