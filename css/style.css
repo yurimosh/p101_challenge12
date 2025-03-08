@@ -102,15 +102,21 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.main-logo .pc-logo {
+.main-logo {
   position: absolute;
-  padding: 0 110px;
-  top: 32%;
+
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.main-logo .sp-logo {
+.pc-logo {
+  padding: 0 140px;
+}
+
+.sp-logo {
   display: none;
 }
 
@@ -448,17 +454,12 @@ SP 767
 ヘッダー
 -------------------------------------------*/
 
-  .main-logo .pc-logo {
+  .pc-logo {
     display: none;
   }
 
-  .main-logo .sp-logo {
+  .sp-logo {
     display: block;
-    position: absolute;
-    padding: 0 50px;
-    top: 45%;
-    left: 0;
-    right: 0;
   }
 
   /*-------------------------------------------
