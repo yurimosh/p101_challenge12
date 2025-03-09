@@ -87,11 +87,11 @@ h1 {
 }
 
 #header li {
-  margin-left: 15px;
+  margin-left: 24px;
 }
 
 #header a {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
   font-family: Helvetica Neue;
   text-shadow: 3px 2px 3px #313131;
@@ -104,7 +104,6 @@ h1 {
 
 .main-logo {
   position: absolute;
-
   top: 0;
   left: 0;
   right: 0;
@@ -193,16 +192,16 @@ ABOUT
   width: 100%;
   height: 240px;
   display: flex;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #about .about-item {
-  padding: 40px 100px 0 100px;
+  padding: 40px 84px 0 84px;
 }
 
 #about .coffee-img {
   position: relative;
-  width: 380px;
+  width: 390px;
   height: 240px;
   margin: 0 auto;
 }
@@ -397,25 +396,7 @@ footer p {
 }
 
 /*-------------------------------------------
-SP 1170
--------------------------------------------*/
-
-@media (max-width: 1170px) {
-}
-
-/*-------------------------------------------
-SP 828
--------------------------------------------*/
-
-@media (max-width: 828px) {
-}
-
-/*-------------------------------------------
 SP 640
--------------------------------------------*/
-
-/*-------------------------------------------
-SP 767
 -------------------------------------------*/
 
 @media (max-width: 640px) {
@@ -453,6 +434,10 @@ SP 767
   /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
+
+  #header {
+    padding: 14px 10px 0 10px;
+  }
 
   .pc-logo {
     display: none;
@@ -495,16 +480,21 @@ ABOUT
     padding: 0;
   }
 
+  #about .coffee-imgarea {
+    height: 260px;
+  }
+
   #about .coffee-img {
     position: relative;
     margin: 0 auto;
     width: 300px;
-    height: 240px;
+    height: 260px;
   }
 
   /* 横並び解除 */
   #about ul {
     display: block;
+    margin-bottom: 30px;
   }
 
   #about li {
