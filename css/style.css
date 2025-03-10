@@ -71,7 +71,7 @@ h1 {
   background-image: url(../images/mainvisual.jpg);
   background-size: cover;
   background-position: center;
-  height: 570px;
+  height: 100vh;
   position: relative;
   padding: 14px 40px 0 40px;
   filter: sepia(10%);
@@ -445,6 +445,7 @@ SP 640
 
   .sp-logo {
     display: block;
+    width: 80%;
   }
 
   /*-------------------------------------------
